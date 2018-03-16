@@ -1,0 +1,31 @@
+table.dataTable tbody tr {
+    background-color: #1e242d !important;
+}
+
+.dataTables_wrapper, .dataTables_info{
+    color: inherit !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled{
+   color: #cfd2da!important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+   color: #1997c6 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+   color: #cfd2da!important;
+}
+
+.dataTables_wrapper .dataTables_length{
+   color: #cfd2da!important;
+}
+
+.dataTables_wrapper .dataTables_filter{
+   color: #cfd2da!important;
+}
+
+.container{
+   margin-top: 30px;
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    {% block head %}    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - My Webpage</title>
+    {% endblock %}
+
+    {% block css %}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/easy-autocomplete.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ion.rangeSlider.css') }}">
+    <link rel="stylesheet" id="sitecss" href="{{ url_for('static', filename='css/site_dark.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ion.rangeSlider.skin_dark.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/social-share-kit.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% endblock %}
+
+    {% block js %}
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.cookie.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.tablesorter.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.tablesorter.widgets.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/social-share-kit.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/site.min.js') }}"></script>
+
+    
+    <script src="{{ url_for('static', filename='js/jquery.easy-autocomplete.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/ion.rangeSlider.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/ath.min.js') }}"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="{{ url_for('static', filename='js/controller.js') }}"></script>
+    {% endblock %}
+    
+  </head>
+  <body>
+    <div id="content">{% block content %}{% endblock %}</div>
+  </body>
+</html>

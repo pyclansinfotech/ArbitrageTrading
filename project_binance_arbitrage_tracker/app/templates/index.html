@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" style="text-align: center;">
+			<h3> Market </h3>
+		</div>
+		<div id="timer_div" style="display:none;"></div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<table id="latestTablew" class="ts tablesorter-bootstrap text-nowrap" cellspacing="0" width="100%">
+				<thead>
+	                <tr>
+	                    <th class="header">Token</th>
+	                    <th>BTC</th>
+	                    <th>BTC EQUIV</th>
+	                    <th>ARBITRAGE(%)</th>
+	                </tr>
+            	</thead>
+			</table>	
+		</div>
+	</div>
+</div>
+{% endblock %}
